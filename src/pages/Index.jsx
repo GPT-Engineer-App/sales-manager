@@ -121,12 +121,52 @@ const Index = () => {
             </CardDescription>
           </CardHeader>
           <CardContent>
-          {/* <!-- ADD MOST OF THE CODE HERE --> */}
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Product</TableHead>
+                  <TableHead>Price</TableHead>
+                  <TableHead>Status</TableHead>
+                  <TableHead>Actions</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell>Product 1</TableCell>
+                  <TableCell>$10.00</TableCell>
+                  <TableCell>
+                    <Badge variant="outline">Active</Badge>
+                  </TableCell>
+                  <TableCell>
+                    <Button size="sm" variant="outline">
+                      Edit
+                    </Button>
+                    <Button size="sm" variant="destructive" className="ml-2">
+                      Delete
+                    </Button>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Product 2</TableCell>
+                  <TableCell>$20.00</TableCell>
+                  <TableCell>
+                    <Badge variant="outline">Draft</Badge>
+                  </TableCell>
+                  <TableCell>
+                    <Button size="sm" variant="outline">
+                      Edit
+                    </Button>
+                    <Button size="sm" variant="destructive" className="ml-2">
+                      Delete
+                    </Button>
+                  </TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </CardContent>
           <CardFooter>
             <div className="text-xs text-muted-foreground">
-              Showing <strong>1-10</strong> of <strong>32</strong>{" "}
-              products
+              Showing <strong>1-2</strong> of <strong>2</strong> products
             </div>
           </CardFooter>
         </Card>
